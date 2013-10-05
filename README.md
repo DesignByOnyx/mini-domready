@@ -10,7 +10,7 @@ However, I fealt a duty to sacrifice a few bytes for the sake of leveraging nati
 domReady(function() { … });
 ```
 
-You can even define your own method name in case you don't like the name "domReady". For example, you could change `domReady` tod `blah`, then you could write the following code:
+You can even define your own method name in case you don't like the name "domReady". For example, you could change `domReady` to `blah`, then you could write the following code:
 
 ```
 blah(function() { 
