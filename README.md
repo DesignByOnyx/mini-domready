@@ -36,5 +36,5 @@ domReady(function() {
 });
 ```
 
-**IMPORTANT** You can rename "domReady" to a dollar sign `$` or `jQuery`, which would allow for a seamless way to use jQuery before it's even loaded.  HOWEVER, you must load jQuery **synchronously BEFORE DOM ready** This means you must use a `<script>` tag at the bottom of the page (or `document.write`).  Feel free to contact me if you have problems.  Please spend more than 5 minutes trying to figure it out on your own.
+**IMPORTANT** You can rename "domReady" to a dollar sign `$` or `jQuery`, which would allow for a seamless way to use jQuery before it's even loaded.  However, you must load jQuery **synchronously BEFORE DOM ready**. This means you must use a `<script>` tag at the bottom of the page (or `document.write`).  Feel free to contact me if you have problems.  Please spend more than 5 minutes trying to figure it out on your own.
  
