@@ -2,7 +2,7 @@
 
 This code was inspired by Justin Diaz and [the smallest DOM ready code ever](http://www.dustindiaz.com/smallest-domready-ever).
 
-However, I fealt a duty to sacrifice a few bytes for the sake of leveraging native browser capabilities whenever possible.  I am fairly pleased with the result.  By default we create a global `domReady` method which should work exactly like the jQuery syntax:
+However, I fealt a duty to sacrifice a few bytes for the sake of leveraging native browser capabilities whenever possible.  I am fairly pleased with the result (.25 Kb).  By default we create a global `domReady` method which should work exactly like the jQuery syntax:
 
 ```
 //     $(function() { … });
@@ -36,5 +36,5 @@ domReady(function() {
 });
 ```
 
-**IMPORTANT** You can rename "domReady" to a dollar sign `$` or `jQuery`, which would allow for a seamless way to use jQuery before it's even loaded.  However, you must load jQuery **synchronously BEFORE DOM ready**. This means you must use a `<script>` tag at the bottom of the page (or `document.write`).  Feel free to contact me if you have problems.  Please spend more than 5 minutes trying to figure it out on your own.
- 
+##Tidbit
+You could rename "domReady" to a dollar sign `$` or `jQuery`, which would allow for a seamless way to use jQuery syntax before it's even loaded.  You could just keep your inline code the exact same.  However, I advise against this as it will make your code confusing - others may think you have actually loaded jQuery.
