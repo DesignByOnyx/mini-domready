@@ -1,6 +1,6 @@
 #Mini DOM Ready
 
-This code was inspired by Justin Diaz and [the smallest DOM ready code ever](http://www.dustindiaz.com/smallest-domready-ever).
+This code was inspired by Dustin Diaz and [the smallest DOM ready code ever](http://www.dustindiaz.com/smallest-domready-ever).
 
 However, I fealt a duty to sacrifice a few bytes for the sake of leveraging native browser capabilities whenever possible.  I am fairly pleased with the result (.25 Kb).  By default we create a global `domReady` method which should work exactly like the jQuery syntax:
 
