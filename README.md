@@ -1,8 +1,10 @@
 #Mini DOM Ready
 
-This code was inspired by Dustin Diaz and [the smallest DOM ready code ever](http://www.dustindiaz.com/smallest-domready-ever).
+This code was inspired by Dustin Diaz and [the smallest DOM ready code ever](http://www.dustindiaz.com/smallest-domready-ever) and is intended to be copied and pasted into the HEAD of your document.
 
-However, I fealt a duty to sacrifice a few bytes for the sake of leveraging native browser capabilities whenever possible.  I am fairly pleased with the result (.25 Kb).  By default we create a global `domReady` method which should work exactly like the jQuery syntax:
+This should work in IE6+, > FF 3.5, and everything else.
+
+Dustin's technique uses polling to determine the state of the document, while this implementation uses native DOM events when possible, falling back to polling. I fealt it was worth sacrificing a few bytes for the sake of leveraging native DOM events whenever possible. I am fairly pleased with the result (.25 Kb minified). By default we create a global `domReady` method which should work exactly like the jQuery syntax:
 
 ```
 //     $(function() { … });
