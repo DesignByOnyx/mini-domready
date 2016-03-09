@@ -6,13 +6,13 @@
 	if( !document[addEventListener] )
 		addEventListener = document[attachEvent] ?
 			(readyEvent = 'onreadystatechange')
-			&& attachEvent : '';
+			&& attachEvent : 0;
 				
 	window[alias] = function(f) {
 		/in/.test(document.readyState) ? 
-			!addEventListener ? 
-				setTimeout(function() { window[alias](f); }, 9) 
-				: document[addEventListener](readyEvent, f, false)
+			addEventListener ? 
+				document[addEventListener](readyEvent, f, false)
+				: setTimeout(function() { window[alias](f); }, 9) 
 			: f();
 	};
 }(window, document, 'domReady'));
